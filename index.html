@@ -1,0 +1,123 @@
+<html>
+
+<head>
+    <title>History of Vilwo</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://officialyu.me/fontawesome/css/all.min.css" />
+
+    <img id="cursor" src="img/cursor.webp" />
+    <style>
+        #cursor {
+            width: 25px;
+            height: 25px;
+            position: fixed;
+            z-index: 10000;
+        }
+    </style>
+</head>
+<script>
+
+window.onload = function() {
+    document.body.addEventListener("mousemove", function(event) {
+        var x = event.pageX - 1 + "px"
+        var y = event.pageY + 1 + "px"
+        document.getElementById("cursor").style.left = x;
+        document.getElementById("cursor").style.top = y;
+    })
+};
+</script>
+<body style="overflow: hidden;cursor:none">
+
+    <a id="bgndVideo" class="player" data-property="{videoURL:'https://youtu.be/1hzpbolvi4c',containment:'body',autoPlay:true, mute:false, startAt:0, stopAt:0, opacity:1}"></a>
+    <div id="loading">
+        <div id="preloader">
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+    <div class="global-overlay">
+        <div class="overlay">
+            <div class="overlay-dash"></div>
+        </div>
+    </div>
+    <section id="home-wrap">
+        <div id='stars'></div>
+        <div id='stars2'></div>
+        <div id='stars3'></div>
+        <div class="content">
+            <img src="img/logo.jpg" alt="" class="brand-logo text-intro opacity-0" />
+            <h1 class="text-intro opacity-0"><span class="polyfy-title">Vilwo</span></h1>
+            <p class="text-intro opacity-0">History of Vilwo</p>
+            <a href="#" id="open-more-info" data-target="info-wrap" class="light-btn text-intro opacity-0">انقر هنا لمعرفة تاريخ فيلو</a>
+        </div>
+    </section>
+    <nav id="player-nav">
+        <ul>
+            <li data-toggle="tooltip" data-placement="top" data-title="تشغيل" data-trigger="hover">
+                <a onclick="$('#bgndVideo').playYTP()"><i class="fa fa-play"></i></a>
+            </li>
+            <li data-toggle="tooltip" data-placement="top" data-title="ايقاف" data-trigger="hover">
+                <a onclick="$('#bgndVideo').pauseYTP()"><i class="fa fa-pause"></i></a>
+            </li>
+            <li class="full-play" data-toggle="tooltip" data-placement="top" data-title="تكبير الصوره" data-trigger="hover">
+                <a class="expand-player"><i class="fa fa-expand"></i></a>
+            </li>
+            <li class="comp-play display-none" data-toggle="tooltip" data-placement="top" data-title="رجوع" data-trigger="hover">
+                <a class="compress-player"><i class="fa fa-compress"></i></a>
+            </li>
+        </ul>
+    </nav>
+
+    <section id="info-wrap">
+        <div class="hero">
+            <div class="center-text">
+                <h3 class="darky">تاريخ فيلو</h3>
+                <p>بداية فيلو كانت في عام 2020 وكانت البداية في برنامج التويتش وكانت بداية صعبة ومليئه بالمتاعب الى انها استمرت و كافحت وتغلبت على الصعوبات ولم تتوقف هنا بل قامت بفتح قناة على اليتيوب في عام 2021 واستمرت في التويتش الى ان وصل عدد المتابعين الى 42.9 الف وانتقلت الى منصة الكيك في عام 2023 لضمان جودة اعلى للمتابعين واستمرت نجاحات فيلو الى يومنا هاذا حيث اصبح عدد متابعينها في الكيك الى 27.6 الف و اليتيوب الى 20.2 الف وكل هاذا بفضل الله ثم جهود المتابعين ونتمنى لي فيلو التوفيق في صناعة المحتوى في الايام القادمة</p>
+            </div>
+        </div>
+        <div class="content"></div>
+        <div class="dark-hero">
+            <div class="center-text">
+                <h3 class="lighty">حسابات فيلو</h3>
+                <div class="info-contact row">
+                    <div class="col-xs-12 col-sm-4 col-lg-4 item-map">
+                        <div class="contact-item"><i class="fab fa-twitter"></i>
+                            <p><strong>حساب فيلو تويتر</strong>
+                                <br>Vilwo1</p>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-4 col-lg-4 item-map">
+                        <div class="contact-item"><i class="fab fa-kickstarter"></i>
+                            <p><strong>حساب فيلو كيك</strong>
+                                <br>Vilwo</p>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-4 col-lg-4 item-map">
+                        <div class="contact-item"><i class="fab fa-youtube"></i>
+                            <p><strong>قناة فيلو على اليوتيوب</strong>
+                                <br>Vilwo1</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content-form no-padding-bottom">
+            <div id="answer">
+                
+            </div>
+            <br>
+        </div>
+       
+    <div class="command-info-wrap"><button class="to-close"><i class="icon ion-close-round"></i></button></div>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery.easings.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/velocity.min.js"></script>
+	<script src="js/velocity.ui.min.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/main-youtube.js"></script>
+	<script src="js/jquery.mb.YTPlayer.js"></script>
+	<script src="js/photoswipe-ui-default.js"></script>
+</body>
+
+</html>
